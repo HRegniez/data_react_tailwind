@@ -25,11 +25,11 @@ const Navbar = () => {
 
             {/********************************************Mobile Burger */}
             <div onClick={handleNav} className='block md:hidden'>
-                {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
+                {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/> }
             </div>
 
             {/********************************************Mobile pop-up menu */}
-            <div className={ !nav ? 'fixed left-0 top-24 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={ nav ? 'fixed left-0 top-24 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 md:hidden' : 'fixed left-[-100%] top-24 ease-in-out duration-500 md:hidden'}>
             
                 <ul className='uppercase'>
                     <li className='p-4 border-b border-gray-600'>Home</li>
