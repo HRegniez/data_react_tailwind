@@ -6,7 +6,7 @@ import triple from '../assets/triple.png';
 const Cards = () => {
     return (
         <div className='w-full py-[10rem] bg-white' >
-            <div className='max-w-[1240px] grid md:grid-cols-3 gap-8 p-4'>
+            <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 p-4'>
 
                 <div className='w-full shadow-xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
 
